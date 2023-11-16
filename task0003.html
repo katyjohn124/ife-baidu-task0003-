@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人任务管理系统</title>
+    <link rel="stylesheet" href="./css/task0003.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+
+</head>
+
+<body>
+    <header>GTD Tools</header>
+    <section class="menu">
+        <div class="nav">
+            <div class="total">
+                <h3>所有任务<span id="totalTasks">（0）</span></h3>
+            </div>
+            <h3>分类列表</h3>
+            <div class="menu-list">
+                <ul id="cateList">
+                    <!-- <li class="category-item" data-category="default">
+                        <h4>默认主分类<span>(6)</span>
+                        </h4>
+                        <ul>
+                            <li class="kidCategory-item">
+                                <h5>默认子分类<span>(2)</span></h5>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="category-item" data-category="deletable">
+                        <h4>学英语<span>(4)</span>
+                        </h4>
+                        <ul>
+                            <li>task-3<span>(2)</span>
+                            </li>
+                            <li>task-4<span>(2)</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-item" data-category="deletable">
+                        <h4>百度ife项目<span>(5)</span>
+                        </h4>
+                        <ul>
+                            <li>task-5<span>(3)</span>
+                            </li>
+                            <li>task-6<span>(2)</span>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+
+            </div>
+            <button class="add" id="addNew">+新增分类</button>
+        </div>
+        <div class="task">
+            <div class="state">
+                <button id="allTask">所有</button>
+                <button id="unFinish">未完成</button>
+                <button id="finished">已完成</button>
+            </div>
+            <div class="task-list" id="task-list">
+                <!-- <div class="taskTime">2023-10-27</div>
+                <ul>
+                    <li taskid="1" class="active">todo-1</li>
+                    <li taskid="2">todo-2</li>
+                    <li taskid="3">todo-3</li>
+                </ul> -->
+                <!-- <div class="taskTime">2023-10-26</div>
+                <ul>
+                    <li>todo-4</li>
+                    <li>todo-5</li>
+                    <li>todo-6</li>
+                </ul> -->
+            </div>
+            <button class="add-one" id="addOne">+新增任务</button>
+        </div>
+        <div class="detail" id="detail">
+            <div class="taskTitle">
+                任务标题：<span id="disTitle"></span>
+                <div class="set">
+                    <a href="" class="finish"><i class="iconfont icon-checkmark_circle_outlined"></i></a>
+                    <a href="" class="edit"><i class="iconfont icon-command_outlined"></i></a>
+                </div>
+            </div>
+            <div class="taskDate">
+                任务日期：<span id="disDate"></span>
+            </div>
+            <div class="taskContent" id="disContent"></div>
+        </div>
+        <div class="modify" id="modify">
+            <div class="modify-h">
+                标题：<input type="text" placeholder="输入标题" id="title">
+
+            </div>
+            <div class="time">日期：<input type="date" placeholder="日期按格式yyyy-mm-dd输入" id="time"></div>
+            <div class="content">
+                <textarea placeholder="请输入内容..." id="content"></textarea>
+            </div>
+            <div class="cancel-save">
+                <button class="save" id="save">保存</button>
+                <button class="cancel" id="cancel">取消</button>
+            </div>
+        </div>
+    </section>
+    <section class="newAdd" id="hiddenWindow">
+        <div class="add-W">
+            <div class="choice">
+                新分类名称：<input type="text" id="newCategoryName">
+                选择主分类：<select id="parentCategory">
+                    <option value="-1">默认主分类</option>
+                    <option value="0">请添加一级分类</option>
+                    <!-- <option value="2">学英语</option>
+                    <option value="3">百度ife项目</option> -->
+                </select>
+            </div>
+            <div class="confirm-cancel">
+                <button class="confirm" id="confirm">确定</button>
+                <button class="w-cancel" id="w-cancel">取消</button>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="./js/task0003.js"></script> -->
+    <script src="./js/TestErrorCopy.js"></script>
+</body>
+
+</html>
